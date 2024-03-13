@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:posts": "nodemon ./mini-project/post/index.js"
+    "start:posts": "nodemon ./mini-project/post/index.js",
+    "start:comment": "nodemon ./mini-project/comment/index.js"
   },
   "author": "",
   "license": "ISC",
