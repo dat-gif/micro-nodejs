@@ -2,8 +2,11 @@ import express from "express";
 import { randomBytes } from "crypto";
 import bodyParser from "body-parser";
 import { log } from "console";
+import cors from "cors";
+
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());
 
 const postCommentIds = {};
 
