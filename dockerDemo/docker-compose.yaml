@@ -1,0 +1,8 @@
+version: "0.1"
+
+services:
+  dumpdocker:
+    image: dump/dockerdemo
+    container_name: dumpdemo
+    ports:
+      - "8080:8080"
