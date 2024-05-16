@@ -1,13 +1,10 @@
 {
-  "name": "be",
+  "name": "post",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start:posts": "nodemon ./mini-project/post/index.js",
-    "start:comment": "nodemon ./mini-project/comment/index.js",
-    "start:event": "nodemon ./mini-project/eventBus/index.js",
-    "start:query": "nodemon ./mini-project/queryService/index.js",
     "dev": "concurrently --kill-others \"npm run start:posts\" \"npm run start:comment\"  \"npm run start:event\" \"npm run start:query\"  "
   },
   "author": "",
@@ -19,10 +16,6 @@
     "cors": "^2.8.5",
     "cros": "^1.0.1",
     "express": "^4.18.3",
-    "nodemon": "^3.1.0",
-    "turbo": "^1.13.3"
-  },
-  "workspaces": [
-    "apps/*"
-  ]
+    "nodemon": "^3.1.0"
+  }
 }

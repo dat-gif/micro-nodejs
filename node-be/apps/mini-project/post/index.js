@@ -3,7 +3,6 @@ import { randomBytes } from "crypto";
 import bodyParser from "body-parser";
 import cors from "cors";
 import axios from "axios";
-import { log } from "console";
 
 const app = express();
 app.use(bodyParser.json());

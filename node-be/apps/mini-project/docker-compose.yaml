@@ -1,0 +1,10 @@
+version: "0.1"
+
+services:
+  post:
+    build:
+      dockerfile: Dockerfile
+      context: ./post
+    container_name: post
+    ports:
+      - "4000:4000"
