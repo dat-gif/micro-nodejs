@@ -34,5 +34,6 @@ app.post("/events", (req, res) => {
 });
 
 app.listen(4000, () => {
+  console.log("--post on:hi from v2--");
   console.log("--post on: 4000--");
 });

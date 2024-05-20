@@ -8,3 +8,31 @@ services:
     container_name: post
     ports:
       - "4000:4000"
+  comments:
+    build:
+      dockerfile: Dockerfile
+      context: ./comment
+    container_name: comment
+    ports:
+      - "4001:4001"
+  eventbus:
+    build:
+      dockerfile: Dockerfile
+      context: ./eventBus
+    container_name: eventbus
+    ports:
+      - "5000:5000"
+  moderation:
+    build:
+      dockerfile: Dockerfile
+      context: ./moderation
+    container_name: moderation
+    ports:
+      - "4003:4003"
+  queryservice:
+    build:
+      dockerfile: Dockerfile
+      context: ./queryService
+    container_name: queryservice
+    ports:
+      - "4002:4002"
